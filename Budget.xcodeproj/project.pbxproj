@@ -11,6 +11,15 @@
 		967D8DB42795A2830094ADF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967D8DB32795A2830094ADF6 /* ContentView.swift */; };
 		967D8DB62795A2850094ADF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967D8DB52795A2850094ADF6 /* Assets.xcassets */; };
 		967D8DB92795A2850094ADF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967D8DB82795A2850094ADF6 /* Preview Assets.xcassets */; };
+		967D8DC02795A2E50094ADF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 967D8DBF2795A2E50094ADF6 /* GoogleService-Info.plist */; };
+		967D8DC32795A3720094ADF6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 967D8DC22795A3720094ADF6 /* FirebaseAnalytics */; };
+		967D8DC52795A3720094ADF6 /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 967D8DC42795A3720094ADF6 /* FirebaseAnalyticsSwift-Beta */; };
+		967D8DC72795A3720094ADF6 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 967D8DC62795A3720094ADF6 /* FirebaseDatabase */; };
+		967D8DC92795A3720094ADF6 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 967D8DC82795A3720094ADF6 /* FirebaseDatabaseSwift-Beta */; };
+		967D8DCB2795A3720094ADF6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 967D8DCA2795A3720094ADF6 /* FirebaseFirestore */; };
+		967D8DCD2795A3720094ADF6 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 967D8DCC2795A3720094ADF6 /* FirebaseFirestoreSwift-Beta */; };
+		967D8DCF2795A3720094ADF6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 967D8DCE2795A3720094ADF6 /* FirebaseStorage */; };
+		967D8DD12795A4560094ADF6 /* BudgetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967D8DD02795A4560094ADF6 /* BudgetRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,8 @@
 		967D8DB32795A2830094ADF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		967D8DB52795A2850094ADF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		967D8DB82795A2850094ADF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		967D8DBF2795A2E50094ADF6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		967D8DD02795A4560094ADF6 /* BudgetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967D8DC72795A3720094ADF6 /* FirebaseDatabase in Frameworks */,
+				967D8DC52795A3720094ADF6 /* FirebaseAnalyticsSwift-Beta in Frameworks */,
+				967D8DC92795A3720094ADF6 /* FirebaseDatabaseSwift-Beta in Frameworks */,
+				967D8DCD2795A3720094ADF6 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				967D8DCF2795A3720094ADF6 /* FirebaseStorage in Frameworks */,
+				967D8DCB2795A3720094ADF6 /* FirebaseFirestore in Frameworks */,
+				967D8DC32795A3720094ADF6 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				967D8DB12795A2830094ADF6 /* BudgetApp.swift */,
+				967D8DD02795A4560094ADF6 /* BudgetRepository.swift */,
 				967D8DB32795A2830094ADF6 /* ContentView.swift */,
 				967D8DB52795A2850094ADF6 /* Assets.xcassets */,
 				967D8DB72795A2850094ADF6 /* Preview Content */,
@@ -63,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				967D8DB82795A2850094ADF6 /* Preview Assets.xcassets */,
+				967D8DBF2795A2E50094ADF6 /* GoogleService-Info.plist */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -83,6 +103,15 @@
 			dependencies = (
 			);
 			name = Budget;
+			packageProductDependencies = (
+				967D8DC22795A3720094ADF6 /* FirebaseAnalytics */,
+				967D8DC42795A3720094ADF6 /* FirebaseAnalyticsSwift-Beta */,
+				967D8DC62795A3720094ADF6 /* FirebaseDatabase */,
+				967D8DC82795A3720094ADF6 /* FirebaseDatabaseSwift-Beta */,
+				967D8DCA2795A3720094ADF6 /* FirebaseFirestore */,
+				967D8DCC2795A3720094ADF6 /* FirebaseFirestoreSwift-Beta */,
+				967D8DCE2795A3720094ADF6 /* FirebaseStorage */,
+			);
 			productName = Budget;
 			productReference = 967D8DAE2795A2830094ADF6 /* Budget.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +140,9 @@
 				Base,
 			);
 			mainGroup = 967D8DA52795A2830094ADF6;
+			packageReferences = (
+				967D8DC12795A3720094ADF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 967D8DAF2795A2830094ADF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +159,7 @@
 			files = (
 				967D8DB92795A2850094ADF6 /* Preview Assets.xcassets in Resources */,
 				967D8DB62795A2850094ADF6 /* Assets.xcassets in Resources */,
+				967D8DC02795A2E50094ADF6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				967D8DB42795A2830094ADF6 /* ContentView.swift in Sources */,
+				967D8DD12795A4560094ADF6 /* BudgetRepository.swift in Sources */,
 				967D8DB22795A2830094ADF6 /* BudgetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +375,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		967D8DC12795A3720094ADF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		967D8DC22795A3720094ADF6 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 967D8DC12795A3720094ADF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		967D8DC42795A3720094ADF6 /* FirebaseAnalyticsSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 967D8DC12795A3720094ADF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAnalyticsSwift-Beta";
+		};
+		967D8DC62795A3720094ADF6 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 967D8DC12795A3720094ADF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		967D8DC82795A3720094ADF6 /* FirebaseDatabaseSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 967D8DC12795A3720094ADF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseDatabaseSwift-Beta";
+		};
+		967D8DCA2795A3720094ADF6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 967D8DC12795A3720094ADF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		967D8DCC2795A3720094ADF6 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 967D8DC12795A3720094ADF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		967D8DCE2795A3720094ADF6 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 967D8DC12795A3720094ADF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 967D8DA62795A2830094ADF6 /* Project object */;
 }
